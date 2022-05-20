@@ -1,0 +1,29 @@
+{
+  "name": "goit-nodejs-hw-01",
+  "version": "1.0.0",
+  "description": "CLI App",
+  "main": "index.js",
+  "dependencies": {
+    "nanoid": "^3.3.3",
+    "yargs": "^17.4.1"
+  },
+  "devDependencies": {
+    "commander": "^9.2.0",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeslaIh/goit-NodeJS-hw-01.git"
+  },
+  "author": "Ihor Teslenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeslaIh/goit-NodeJS-hw-01/issues"
+  },
+  "homepage": "https://github.com/TeslaIh/goit-NodeJS-hw-01#readme"
+}
