@@ -37,9 +37,9 @@ const addContact = async (name, email, phone) => {
     return newContact;
 }
 
-const removeContact = async (contactId) => {
+const removeContact = async (id) => {
     const contacts = await listContacts();
-    const oldContacts = contacts.findIndex(item => item.id === contactId);
+    const oldContacts = contacts.findIndex(item => item.id === id);
     if (oldContacts === -1) {
         return null;
     }
