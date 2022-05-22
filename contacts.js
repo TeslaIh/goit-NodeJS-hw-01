@@ -16,7 +16,7 @@ const listContacts = async () => {
 
 const getContactById = async (id) => {
   const contact = await listContacts();
-  const result = contact.find((item) => item.id === id);
+  const result = contact.find((item) => item.id === String(id));
   if (!result) {
     throw new Error(`Contact id=${id} is absent`);
   }
@@ -39,7 +39,7 @@ const addContact = async (name, email, phone) => {
 
 const removeContact = async (id) => {
     const contacts = await listContacts();
-    const oldContacts = contacts.findIndex(item => item.id === id);
+    const oldContacts = contacts.findIndex((item) => item.id === String(id));
     if (oldContacts === -1) {
         return null;
     }
